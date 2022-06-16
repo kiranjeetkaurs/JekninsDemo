@@ -1,6 +1,6 @@
 package stepdefinitions;
 
-import static org.testng.Assert.assertEquals;
+//import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.WebDriver;
 
@@ -11,6 +11,7 @@ import com.pages.DieticianHomepage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class CreatePlanBrowseSteps {
 	
@@ -35,7 +36,7 @@ public class CreatePlanBrowseSteps {
 	  	DieticianHome.funDietplans();
 		//driver.get("https://www.dieticiangroup.com/ConfirmConditionsandCreatePlan");
 		String Url = CreatePlanBrowse.VerifyUrl();
-		assertEquals(Url, "https://www.dieticiangroup.com/ConfirmConditionsandCreatePlan");
+		Assert.assertEquals(Url, "https://www.dieticiangroup.com/ConfirmConditionsandCreatePlan");
 		System.out.println("Url's are Same");
 		System.out.println("Titles are Same");
 	}
@@ -43,7 +44,7 @@ public class CreatePlanBrowseSteps {
 	@Then("User sees the heading {string} displayed on the page")
 	public void user_sees_the_heading_displayed_on_the_page(String string) {
 		String Title = CreatePlanBrowse.Verifytitle();
-		assertEquals(Title, "ConfirmConditionsandCreatePlan");
+		Assert.assertEquals(Title, "ConfirmConditionsandCreatePlan");
 		CreatePlanBrowse.funTextHeader();
 	}
 	
@@ -145,7 +146,7 @@ public void user_lands_on_confirm_conditions_and_create_plan_page_of_site() {
 	DieticianHome.funDietplans();
 	//driver.get("https://www.dieticiangroup.com/ConfirmConditionsandCreatePlan");
 	String Url = CreatePlanBrowse.VerifyUrl();
-	assertEquals(Url, "https://www.dieticiangroup.com/ConfirmConditionsandCreatePlan");
+	Assert.assertEquals(Url, "https://www.dieticiangroup.com/ConfirmConditionsandCreatePlan");
 	System.out.println("Url's are Same");
 	System.out.println("Titles are Same");
 }
@@ -169,7 +170,7 @@ public void user_clicks_the_generate_menu_button() {
 public void user_should_land_on_page_with_new_diet_plan_generated_with_the_latest_confirmed_health_conditions(String string) {
     driver.get(CreatePlanBrowse.nexturl);
     String Url = CreatePlanBrowse.VerifyUrl();
-	assertEquals(Url, "http://www.dieticiangroup.com/ViewRecentDiets");
+    Assert.assertEquals(Url, "http://www.dieticiangroup.com/ViewRecentDiets");
 	System.out.println("Url's are Same");
 	
 }

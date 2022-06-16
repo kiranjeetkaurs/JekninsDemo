@@ -1,6 +1,6 @@
 package stepdefinitions;
 
-import static org.testng.Assert.assertEquals;
+//import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.WebDriver;
 
@@ -11,6 +11,7 @@ import com.pages.DieticianHomepage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class AddNewPatientSteps {
 	
@@ -39,8 +40,8 @@ public void user_is_on_add_new_patient_page() {
 public void user_should_see_add_new_patient_form_displayed_with_menu_tabs() {
 	String title = AddPatient.Verifytitle();
 	String Url = AddPatient.VerifyUrl();
-	assertEquals(Url, "https://www.dieticiangroup.com/AddNewPatient");
-	assertEquals(title, "AddNewPatient");
+	Assert.assertEquals(Url, "https://www.dieticiangroup.com/AddNewPatient");
+	Assert.assertEquals(title, "AddNewPatient");
 	System.out.println("Url's are Same");
 }
 	
@@ -59,7 +60,7 @@ public void user_clicks_on_update_button_without_filling_madatory_fields() {
 public void user_should_see_error_message_displayed(String msg) {
 	msg="Please fillup all the mandatory fields";
     System.out.println(msg);
-    assertEquals(msg,"Please fillup all the mandatory fields");
+    Assert.assertEquals(msg,"Please fillup all the mandatory fields");
 }
 
 @When("User enter invalid data\\/Empty in {string} of Add New Patient page and clicks on Update Button")
@@ -207,8 +208,8 @@ public void user_should_verify_the_and_display_the_message(String fullName) {
 		AddPatient.MyPatientclick();
 		String title = AddPatient.Verifytitle();
 		String Url = AddPatient.VerifyUrl();
-		assertEquals(Url, "https://www.dieticiangroup.com/MyPatients");
-		assertEquals(title, "MyPatients");
+		Assert.assertEquals(Url, "https://www.dieticiangroup.com/MyPatients");
+		Assert.assertEquals(title, "MyPatients");
 		System.out.println("Url's are Same");
 		
 	}

@@ -1,6 +1,6 @@
 package stepdefinitions;
 
-import static org.testng.Assert.assertEquals;
+//import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 
@@ -13,6 +13,7 @@ import com.pages.DieticianHomepage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class DieticianHomeSteps {
 
@@ -38,7 +39,7 @@ public class DieticianHomeSteps {
 	@When("User is in Dietician Home Page")
 	public void user_is_in_dietician_home_page() {
 		String Url = DieticianHome.VerifyUrl();
-		assertEquals(Url, "https://www.dieticiangroup.com/DieticianHome");
+		Assert.assertEquals(Url, "https://www.dieticiangroup.com/DieticianHome");
 		System.out.println("Url's are Same");
 	}
 
@@ -56,7 +57,7 @@ public class DieticianHomeSteps {
 	@When("User is in the Dietician Home Page")
 	public void user_is_in_the_dietician_home_page() {
 		String Url = DieticianHome.VerifyUrl();
-		assertEquals(Url, "https://www.dieticiangroup.com/DieticianHome");
+		Assert.assertEquals(Url, "https://www.dieticiangroup.com/DieticianHome");
 		System.out.println("Url's are Same");
 	}
 
@@ -74,7 +75,7 @@ public class DieticianHomeSteps {
 	@When("User is  Dietician Home Page")
 	public void user_is_dietician_home_page() {
 		String Url = DieticianHome.VerifyUrl();
-		assertEquals(Url, "https://www.dieticiangroup.com/DieticianHome");
+		Assert.assertEquals(Url, "https://www.dieticiangroup.com/DieticianHome");
 		System.out.println("Url's are Same");
 	}
 
@@ -92,7 +93,7 @@ public class DieticianHomeSteps {
 	@When("User in the Dietician Home Page of Dietician site")
 	public void user_in_the_dietician_home_page_of_dietician_site() {
 		String Url = DieticianHome.VerifyUrl();
-		assertEquals(Url, "https://www.dieticiangroup.com/DieticianHome");
+		Assert.assertEquals(Url, "https://www.dieticiangroup.com/DieticianHome");
 		System.out.println("Url's are Same");
 	}
 
@@ -117,8 +118,8 @@ public class DieticianHomeSteps {
 	public void user_lands_on_add_new_patient_page() {
 		String title = DieticianHome.Verifytitle();
 		String Url = DieticianHome.VerifyUrl();
-		assertEquals(Url, "https://www.dieticiangroup.com/AddNewPatient");
-		assertEquals(title, "AddNewPatient");
+		Assert.assertEquals(Url, "https://www.dieticiangroup.com/AddNewPatient");
+		Assert.assertEquals(title, "AddNewPatient");
 		System.out.println("Url's are Same");
 	}
 
@@ -138,8 +139,8 @@ public class DieticianHomeSteps {
 	public void user_lands_on_my_patient_page() {
 		String title = DieticianHome.Verifytitle();
 		String Url = DieticianHome.VerifyUrl();
-		assertEquals(Url, "https://www.dieticiangroup.com/MyPatients");
-		assertEquals(title, "MyPatients");
+		Assert.assertEquals(Url, "https://www.dieticiangroup.com/MyPatients");
+		Assert.assertEquals(title, "MyPatients");
 		System.out.println("Url's are Same");
 	}
 
@@ -159,8 +160,8 @@ public class DieticianHomeSteps {
 	public void user_lands_on_diet_plans_page() {
 		String title = DieticianHome.Verifytitle();
 		String Url = DieticianHome.VerifyUrl();
-		assertEquals(Url, "https://www.dieticiangroup.com/ConfirmConditionsandCreatePlan");
-		assertEquals(title, "ConfirmConditions and CreatePlan");
+		Assert.assertEquals(Url, "https://www.dieticiangroup.com/ConfirmConditionsandCreatePlan");
+		Assert.assertEquals(title, "ConfirmConditions and CreatePlan");
 		System.out.println("Url's are Same");
 	}
 
