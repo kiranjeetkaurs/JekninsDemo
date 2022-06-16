@@ -1,12 +1,13 @@
 package stepdefinitions;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 import com.factory.DriverFactory;
 import com.pages.MyPatientsPage;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class TC_05_MyPatients_PaginationSteDef {
 	MyPatientsPage mpPage = new MyPatientsPage(DriverFactory.getDriver());

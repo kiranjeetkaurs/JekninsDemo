@@ -1,15 +1,15 @@
 package stepdefinitions;
 
+import java.io.IOException;
+
+import org.junit.Assert;
+
 import com.factory.DriverFactory;
 import com.pages.MyPatientsPage;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-import java.io.IOException;
-
-import org.junit.Assert;
 
 public class TC_10_ViewPatientsTestReports_PDFDownloadStepDef {
 

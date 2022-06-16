@@ -7,9 +7,10 @@ import io.cucumber.junit.CucumberOptions;
 
 
 	@RunWith(Cucumber.class) 
-	@CucumberOptions(features =".\\src/test/resources/com/features",
-	glue= {"stepdefinitions","AppHooks"},
-	plugin={"pretty","html:target/HtmlReports","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+	@CucumberOptions(features ="C:\\Users\\kiran_9zu7s3k\\eclipse-workspace\\JekninsDemo\\src\\test\\resources\\com\\features",
+	glue= {"C:\\Users\\kiran_9zu7s3k\\eclipse-workspace\\JekninsDemo\\src\\test\\java\\stepdefinitions",
+			"C:\\Users\\kiran_9zu7s3k\\eclipse-workspace\\JekninsDemo\\src\\test\\java\\AppHooks"},
+//	plugin={"pretty","html:target/HtmlReports","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
     monochrome = true,
 	dryRun = false,
 		//	  strict = true

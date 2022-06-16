@@ -21,7 +21,7 @@ public class DriverFactory {
 		try {
 			prop = new Properties();
 			FileInputStream FIS = new FileInputStream(
-					"C:/Users/svatt/git/Dietician-UI-Automation-Hackathon/src/test/resources/config/config.properties");
+					".\\src/test/resources/config/config.properties");
 			prop.load(FIS);
 		} catch (IOException e) {
 			e.getCause();

@@ -1,12 +1,13 @@
 package stepdefinitions;
 
+import org.junit.Assert;
+
 import com.factory.DriverFactory;
 import com.pages.MyPatientsPage;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.junit.Assert; 
+import io.cucumber.java.en.When; 
 
 public class TC_02_MyPatients_SearchPatientsStepDef {
 	
