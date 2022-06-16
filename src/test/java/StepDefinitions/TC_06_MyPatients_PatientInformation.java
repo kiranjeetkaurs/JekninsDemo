@@ -1,4 +1,4 @@
-package stepdefinitions;
+package StepDefinitions;
 
 import com.factory.DriverFactory;
 import com.pages.MyPatientsPage;
